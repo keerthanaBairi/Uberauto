@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verify OTP</title>
+  <link rel="stylesheet" href="ride.css">
+   <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter OTP</h2>
+    <p>We sent an OTP to: <span id="userContact"></span></p>
+    <input type="text" id="otpInput" placeholder="Enter 6-digit OTP">
+    <button id="verifyBtn">Verify OTP</button>
+  </div>
+
+  <script>
+    // Retrieve stored data
+    const userContact = localStorage.getItem('userInput');
+    const generatedOTP = localStorage.getItem('otp');
+
+    document.getElementById('userContact').textContent = userContact;
+
+    document.getElementById('verifyBtn').addEventListener('click', function() {
+      const enteredOTP = document.getElementById('otpInput').value;
+      if (enteredOTP === generatedOTP) {
+        alert('OTP verified successfully! ✅');
+        // You can redirect to homepage after successful login
+        window.location.href = 'home.html'; // Or wherever you want
+      } else {
+        alert('Incorrect OTP ❌. Please try again.');
+      }
+    });
+  </script>
+</body>
+</html>

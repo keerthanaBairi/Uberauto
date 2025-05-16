@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="ride.css">
+</head>
+<body>
+  <div class="container">
+    <h2>What's your phone number or email?</h2>
+    <input type="text" id="userInput" placeholder="Enter phone number or email">
+    <button id="continueBtn">Continue</button>
+
+    <div class="divider"><span>or</span></div>
+
+    <button class="social-btn google" onclick="socialLogin('Google')">
+      <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo" width="20" style="margin-right: 8px;">
+      Continue with Google
+    </button>
+
+    <button class="social-btn apple" onclick="socialLogin('Apple')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" width="20" style="margin-right: 8px;">
+      Continue with Apple
+    </button>
+
+    <div class="divider"><span>or</span></div>
+
+    <button class="qr-btn" onclick="qrLogin()">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747545.png" alt="QR Code Icon" width="20" style="margin-right: 8px;">
+      Log in with QR code
+    </button>
+
+    <p class="consent-text">
+      By proceeding, you consent to get calls, WhatsApp or SMS/RCS messages, including by automated means...
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

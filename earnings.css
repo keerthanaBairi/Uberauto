@@ -1,0 +1,208 @@
+/* Base Fonts and Colors */
+body {
+  font-family: Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-family: "Times New Roman", serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+/* Navigation */
+.nav-left {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: 40px;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #faf5f5;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ab9fdf;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 200px;
+  margin-bottom: 30px;
+}
+
+/* Hero Section */
+.hero {
+  background: #000;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(255,255,255,0.05);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+.promo-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap; /* makes it responsive */
+  margin-top: 30px;
+}
+
+.promo-content img {
+  width: 550px;
+  border-radius: 20px;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+.promo-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.promo-text ul {
+  padding-left: 20px;
+}
+
+.promo-text li {
+  margin-bottom: 10px;
+}
+
+/* Section Styling */
+.earnings-section,
+.promotions,
+.ways-to-earn,
+.payments {
+  padding: 60px 20px;
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
+
+.earnings-grid,
+.ways-grid,
+.pay-grid {
+  display: grid;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.earnings-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.ways-grid,
+.pay-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.earnings-grid div,
+.ways-grid div,
+.pay-grid div {
+  background-color: #111;
+  color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.earnings-grid div:hover,
+.ways-grid div:hover,
+.pay-grid div:hover {
+  transform: translateY(-5px);
+}
+
+/* Images */
+img {
+  width:350px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #000;
+  color: #aaa;
+  border-top: 1px solid #222;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}

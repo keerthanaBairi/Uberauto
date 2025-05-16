@@ -1,0 +1,155 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+section {
+  padding: 60px 20px;
+  background-color: #000;
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
+
+/* Header Styles */
+header {
+  background-color: #000;
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Navigation */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: 40px;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ab9fdf;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #000;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #fff;
+  color: #000;
+  padding: 12px 24px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background-color: #ccc;
+}
+
+/* Card-style sections (Features, Requirements, Lists) */
+.features,
+.requirements,
+.basics-list,
+.trips-list,
+.earnings-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.features div,
+.requirements div,
+.basics-list div,
+.trips-list div,
+.earnings-list div {
+  background: #111;
+  color: #fff;
+  padding: 25px;
+  flex: 1 1 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.features div:hover,
+.requirements div:hover,
+.basics-list div:hover,
+.trips-list div:hover,
+.earnings-list div:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}

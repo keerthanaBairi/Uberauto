@@ -1,0 +1,274 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', serif;
+}
+a, p, li, button, input, .btn, .details-button, .language-btn {
+  font-family: 'Calibri', sans-serif;
+  font-size: 15px;
+}
+body {
+    font-family:'calibri',sans-serif;
+    background-color: #f9f9f9;
+    color: #ffffff;
+}
+
+header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+}
+.container {
+ 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Nav Links */
+.nav-left {
+    padding-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: 40px;
+}
+
+.nav-links li {
+  margin-right: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #faf5f5;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ab9fdf;
+}
+
+.nav-right {
+  padding-left: 450px;
+  padding-right: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 1.5em;
+    color: #27ae60;
+}
+
+hr {
+    border: 1px solid #333;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.faq-list details {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.faq-list summary {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.features, .benefits, .columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature, .benefit, .column {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature img, .column i, .benefit i {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    color: #27ae60;
+    font-size: 2em;
+}
+
+.feature h2, .benefit h2, .column h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.feature p, .column ul, .benefit p {
+    font-size: 1em;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.column li {
+    margin-bottom: 10px;
+}
+
+.learn-more {
+    color: #333;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    padding: 20px;
+}
+
+.header-graphic {
+    background-color: #0072b1;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.fixed-cta {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.cta-button {
+    display: block;
+    padding: 15px 30px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #219653;
+}
+
+.black-background {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .features, .benefits, .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature, .benefit, .column {
+        width: 80%;
+    }
+    .fixed-cta {
+        width: 90%;
+        bottom: 10px;
+    }
+    .cta-button {
+        width: 100%;
+    }
+}
